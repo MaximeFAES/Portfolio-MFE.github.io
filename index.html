@@ -6,7 +6,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Maxime Farfan Escobar</title>
     <link href="style.css" rel="stylesheet">
-    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+            text-align: center; /* Centrage de tout le texte */
+        }
+
+        header {
+            background-color: #228B22; /* Vert forêt */
+            color: white;
+            padding: 60px 0;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeInHeader 1.5s ease-out;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeInSection 2s forwards;
+        }
+
+        h2 {
+            font-size: 2.8rem;
+            color: #228B22; /* Vert forêt */
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        p, .contact-info, .work-info {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: center; /* Centrer les paragraphes */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        li {
+            background: #f0f0f0;
+            padding: 30px;
+            width: 280px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            font-size: 1.3rem;
+        }
+
+        li:hover {
+            background-color: #228B22; /* Vert forêt */
+            color: white;
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .contact-info {
+            font-size: 1.3rem;
+            display: block;
+            margin-top: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #228B22; /* Vert forêt */
+        }
+
+        .contact-info a:hover {
+            color: #1C6B1C; /* Vert plus foncé */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        /* Animations */
+        @keyframes fadeInHeader {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes fadeInSection {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 0;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            section {
+                padding: 20px;
+                margin: 20px;
+            }
+
+            li {
+                width: 220px;
+                font-size: 1.1rem;
+            }
+
+            .contact-info {
+                font-size: 1rem;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -70,3 +224,4 @@
 
 </body>
 </html>
+
